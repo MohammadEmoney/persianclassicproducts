@@ -25,7 +25,7 @@ class Category extends Model
         'is_active'
     ];
 
-    /**
+     /**
      * The attributes that should be cast.
      *
      * @var array<string, string>
@@ -36,14 +36,37 @@ class Category extends Model
     ];
 
     /**
-     * Get the user's first name.
+     * Get the Category's name.
      *
      * @return \Illuminate\Database\Eloquent\Casts\Attribute
      */
-    protected function firstName(): Attribute
+    protected function getNameAttribute($val)
     {
-        return Attribute::make(
-            get: fn ($value) => $this->getValueByLang($value, 'name'),
-        );
+        switch (config('app.locale')) {
+            case 'fa':
+                return $this->names["fa"] ?? $val;
+                break;
+
+            case 'it':
+                return $this->names["it"] ?? $val;
+                break;
+
+            default:
+                return $val;
+                break;
+        }
+    }
+
+    /**
+     * @return void
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
+    public function scopeIsActive($query)
+    {
+        return $query->where('is_active', 1);
     }
 }

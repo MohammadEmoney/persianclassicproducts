@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('slug')->nullable();
+            $table->string('scientific_name')->nullable();
+            $table->foreignId('category_id')->constrained('categories');
             $table->text('excerpt')->nullable();
             $table->longText('content')->nullable();
             $table->boolean('is_visible')->default(1);

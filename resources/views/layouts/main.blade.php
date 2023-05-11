@@ -7,7 +7,7 @@
         <!-- Navigation-->
         @include('layouts.partials.nav')
         <!-- Masthead-->
-        @include('layouts.partials.header')
+        {{-- @include('layouts.partials.header') --}}
         <!-- Portfolio Section-->
         @yield('content')
         <!-- Footer-->

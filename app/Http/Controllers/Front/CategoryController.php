@@ -14,4 +14,10 @@ class CategoryController extends Controller
         // return $category->names[0]['data']['fa'];
         return $category;
     }
+
+    public function show(Category $category)
+    {
+        $products = $category->products()->paginate(15);
+        return view('front.categories.index', compact('products', 'category'));
+    }
 }
