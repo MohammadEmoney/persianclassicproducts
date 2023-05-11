@@ -18,7 +18,7 @@
                     <li class="list-group-item bg-transparent text-white border-0"><i class="fa fa-phone"></i> +39097122999 ({{ __('Italy') }})</li>
                     <li class="list-group-item bg-transparent text-white border-0"><i class="fa fa-mobile"></i> +989127179262 ({{ __('Iran') }})</li>
                     <li class="list-group-item bg-transparent text-white border-0"><i class="fa fa-mobile"></i> +393516520568 ({{ __('Italy') }})</li>
-                    <li class="list-group-item bg-transparent text-white border-0"><i class="fa fa-envelope"></i> info(a)persianfoodproduct.com</li>
+                    <li class="list-group-item bg-transparent text-white border-0"><i class="fa fa-envelope"></i> info(a)persianclassicproduct.com</li>
                 </ul>
             </div>
             <!-- Footer Social Icons-->
