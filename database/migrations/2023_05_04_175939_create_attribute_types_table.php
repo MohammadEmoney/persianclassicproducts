@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug')->nullable();
             $table->integer('order')->nullable();
             $table->string('input_type')->nullable();
+            $table->string('type')->nullable();
             $table->longText('names')->nullable();
             $table->timestamps();
         });

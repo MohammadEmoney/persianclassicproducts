@@ -27,6 +27,7 @@ return new class extends Migration
             $table->longText('contents')->nullable();
             $table->longText('excerpts')->nullable();
             $table->longText('extra')->nullable();
+            $table->text('names')->nullable();
             $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
