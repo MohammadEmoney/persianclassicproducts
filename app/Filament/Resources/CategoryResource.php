@@ -37,14 +37,8 @@ class CategoryResource extends Resource
                     TextInput::make('name')->label('Name')->required()->reactive()
                             ->afterStateUpdated(fn ($state, callable $set) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->label('Slug'),
-                    FilamentBuilder::make('names')
-                        ->blocks([
-                            FilamentBuilder\Block::make('translation')
-                                ->schema([
-                                    TextInput::make('fa')->label('Farsi')->required(),
-                                    TextInput::make('it')->label('Italian')->required()
-                                ]),
-                            ]),
+                    TextInput::make('names.fa')->label('Farsi')->required(),
+                    TextInput::make('names.it')->label('Italian')->required(),
                     Select::make('parent_id')->relationship('parent', 'name'),
                     RichEditor::make('description')
                                  ->label(__('Description'))
