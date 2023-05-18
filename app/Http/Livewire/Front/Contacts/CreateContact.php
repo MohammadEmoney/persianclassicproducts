@@ -41,7 +41,7 @@ class CreateContact extends Component
             'message' => $this->message,
         ]);
 
-        Mail::to("persianfoodproduct@gmail.com")->send(new ContactMail($contact));
+        Mail::to("persianclassicproducts@gmail.com")->send(new ContactMail($contact));
 
         $this->dispatchBrowserEvent('swal:modal', [
             'icon' => 'success',

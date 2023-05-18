@@ -106,7 +106,7 @@
                             <strong>{{ __('Product details') }}</strong>
                         </span>
 
-                        @foreach (\App\Models\AttributeType::all() as $attrType)
+                        @foreach ($attributeTypes as $attrType)
                             <p class="mb-2">
                                 <strong>{{ $attrType->name }}:</strong>
                                 @foreach ($product->attributeValues->where('attribute_type_id', $attrType->id) as $attrValue)
@@ -183,7 +183,38 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <ul class="list-group list-group-flush">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <a class="btn btn-outline-dark" href="tel:+982632554120">
+                                    <i class="fa fa-phone"></i> <span dir="ltr">+982632554120</span>
+                                    ({{ __('Iran') }})
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a class="btn btn-outline-dark" href="tel:+39097122999">
+                                    <i class="fa fa-phone"></i> <span dir="ltr">+39097122999</span>
+                                    ({{ __('Italy') }})
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a class="btn btn-outline-dark" href="tel:+989127179262">
+                                    <i class="fa fa-mobile"></i> <span dir="ltr">+989127179262</span>
+                                    ({{ __('Iran') }})
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <a class="btn btn-outline-dark" href="tel:+393516520568">
+                                    <i class="fa fa-mobile"></i> <span dir="ltr">+393516520568</span>
+                                    ({{ __('Italy') }})
+                                </a>
+                            </div>
+                            <div class="col mb-3">
+                                <a class="btn btn-outline-dark" href="mail:info@persianclassicproducts.com">
+                                    <i class="fa fa-envelope"></i> info@persianclassicproducts.com
+                                </a>
+                            </li>
+                        </div>
+                        {{-- <ul class="list-group list-group-flush">
                             <li class="list-group-item bg-transparent border-0">
                                 <a class="btn btn-outline-dark" href="tel:+982632554120">
                                     <i class="fa fa-phone"></i> <span dir="ltr">+982632554120</span>
@@ -213,7 +244,7 @@
                                     <i class="fa fa-envelope"></i> info@persianclassicproducts.com
                                 </a>
                             </li>
-                        </ul>
+                        </ul> --}}
                         {{-- @foreach ($collection as $item)
 
                         @endforeach --}}
