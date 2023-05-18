@@ -209,8 +209,8 @@
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-0">
-                                <a class="btn btn-outline-dark" href="mail:info@persianfoodproducts.com">
-                                    <i class="fa fa-envelope"></i> info@persianfoodproducts.com
+                                <a class="btn btn-outline-dark" href="mail:info@persianclassicproducts.com">
+                                    <i class="fa fa-envelope"></i> info@persianclassicproducts.com
                                 </a>
                             </li>
                         </ul>
