@@ -24,7 +24,7 @@
                 </li>
                 <li class="nav-item mx-0 mx-lg-1 dropdown">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ __('Lang') }}</a>
-                    <ul class="dropdown-menu w-25">
+                    <ul class="dropdown-menu w-25" style="min-width: 4rem">
                         <li><a class="dropdown-item" href="{{ route('front.langs', ['lang' => 'en']) }}"><span class="fi fi-gb"></span></a></li>
                         <li><a class="dropdown-item" href="{{ route('front.langs', ['lang' => 'fa']) }}"><span class="fi fi-ir"></span></a></li>
                         <li><a class="dropdown-item" href="{{ route('front.langs', ['lang' => 'it']) }}"><span class="fi fi-it"></span></a></li>
