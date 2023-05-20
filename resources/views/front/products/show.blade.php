@@ -56,7 +56,7 @@
                 </div>
             </div>
             <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center mb-3">
+            <div class="row justify-content-center mb-3 pb-5">
                 <div class="col-md-6">
                     <!-- Carousel wrapper -->
                     <div id="carouselProductIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -128,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="divider-custom">
+            <div class="divider-custom mt-5">
                 <div class="divider-custom-line"></div>
                 {{-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> --}}
                 <div class="divider-custom-icon text-warning">{{ __('Related Products') }}</div>
